@@ -6,7 +6,6 @@ function App() {
   return (
     <>
       <div className="w-screen h-screen duration-75" style={{ backgroundColor: color }}>
-       
         <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2'>
           <div className='flex flex-wrap justify-center gap-9 shadow-lg bg-white px-3 py-2 rounded-3xl'>
             <button onClick={() => setColor("red")} className='outline-none py-1 rounded-full text-white shadow-lg px-4' style={{ backgroundColor: "red" }}>Red</button>
@@ -20,7 +19,6 @@ function App() {
     </>
   );
 }
-
 export default App;
 // import { useState } from 'react';
 
@@ -47,12 +45,9 @@ export default App;
 //         <div className='fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2'>
 //           <div className='flex flex-wrap justify-center gap-3 shadow-lg bg-white px-3 py-2 rounded-3xl'>
 //             {colors.map((col) => (
-//               <button
-//                 key={col.value}
-//                 onClick={() => setColor(col.value)}
+//               <button key={col.value} onClick={() => setColor(col.value)}
 //                 className='outline-none py-1 rounded-full text-white shadow-lg px-4'
-//                 style={{ backgroundColor: col.value }}
-//               >
+//                 style={{ backgroundColor: col.value }} >
 //                 {col.name}
 //               </button>
 //             ))}
